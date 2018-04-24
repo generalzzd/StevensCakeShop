@@ -1,0 +1,279 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Stevens Cake Shop</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<style type="text/css">
+#head{width:400px;
+        height:30px; margin:auto;}
+  #head ul{padding:0 50 0 0; margin:0 0 0 0; }
+  #head ul li{ list-style:none; float:left; text-decoration:underline; display:block; font-size:18px;
+               width:105px;padding:10px; margin:0px 20px 10px 0px; position:relative;}
+  #head ul li a{ text-decoration:none; color:#000000;}
+  #head ul li a:visited{ text-decoration:none; color:#000000;}
+.drop {
+	background-color:black;
+	}
+	.occ {
+		margin-bottom:5px;}
+  .oc {
+	  width:200px;
+	  margin:auto;
+	  margin-top:5px;
+  }
+  #L1{
+   background-color:gray;
+   padding-left:5px;
+   margin-left:5px;
+  }
+  #L2{
+   background-color:gray;
+   margin-left:10px;
+  }
+ 
+ #L3{
+   background-color:gray;
+   margin-left:5px;
+   border-color:#360;
+  }
+ .button {
+  background-color:#ab91d7;
+  margin:10px 10px 10px 30px;}
+#d1{
+ width:480px;
+  height:220px;
+  margin-top:0px;
+  z-index:1;
+   margin-bottom:20px;
+   text-align:left;
+ }
+#d2{
+    display:none;
+    width:480;
+    height:220px;
+    margin-top:0px;
+	margin-bottom:20px;
+	text-align:left;
+    z-index:1;
+ }
+#d3{	
+ display:none;
+  width:480PX;
+  height:370px;
+  margin-top:0px;
+  text-align:left;
+  z-index:1;
+ }
+ </style>
+<script language="javascript">
+function Tab(num)
+{
+    var i;
+    for(i=1;i<=4;i++)
+    {
+        if(i==num)
+           document.getElementById("d"+i).style.display="block";
+         else
+           document.getElementById("d"+i).style.display="none";
+    }
+}
+</script>
+<body id="top">
+	<div class="container-full" style="margin-right: auto; margin-left: auto;">
+		<header>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a href="index.html" class="navbar-brand" href="#">Stevens Cake Shop</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link" href="#">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="1.html" class="nav-link" href="#">Cakes</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="/WebGL/cakecustom.html" class="nav-link" href="#">Customize</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Display
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Grid</a>
+                                <a class="dropdown-item" href="#">Slide</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Disabled</a>
+                        </li> -->
+                    </ul>
+                    <a href="cart.html">
+                        <button class="btn btn-outline-success my-2 my-sm-0">Cart</button>
+                    </a>
+                </div>
+            </nav>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<!-- Boxes -->
+				<div class="thumbnails">
+
+					<div class="box">
+						<a href="https://youtu.be/s6zR2T9vn2c" class="image fit">
+							<img src="pic/cake3.jpg" alt="" />
+						</a>
+						<div class="inner">
+							<p>Easy food, price and results. Put mango and cream in your mouth.Delicate and soft touch, can not stop the sweet fun.</p>
+						
+						</div>
+					</div>
+
+					<div class="box">
+						
+						<div class="inner">
+							<h2>Mango Cream Cake</h2>
+							<p>Just Bailey's, light cream and you. The flavours may be velvetty subtle, but the chemistry is as electric as a first
+								kiss. </p>
+                            <form action="http://www.example.com/profile.php">
+							    <p class="occ">Choose an occasion</p>
+								<select name="occasion" class="oc">
+								<option value="none" class="drop">None</option>
+								<option value="hb" class="drop">Happy Birthday</option>
+								<option value="love" class="drop">Love</option>
+                                <option value="bw" class="drop">Best wishes</option>
+                                <option value="congratulation" class="drop">Congratulations</option>
+								</select>
+							</form>
+                            <h2>$32.95</h2>
+                            <a href="" class="button">Add to cart</a>
+                            <a href="" class="button">View all cakes</a>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="inner">
+							<div class="meta-row rich-text">
+                				<img src="pic/discount.png" alt="10% off when ordering 2 cakes or more" class="float-left">
+                				<br>
+               					 <img src="pic/ups.png" alt="UPS - On-Time Guarantee! For ANY Occasion You select the delivery date!" class="float-left">
+
+                				 <p class="lead"><strong>On-Time Guarantee!</strong><br>For <strong>ANY</strong> Occasion
+                You select the delivery date!</p>
+
+            				</div>
+						</div>
+					</div>
+
+					<div class="box">
+						
+					  <div class="inner">
+						 <div class="tab">  
+        	  				<div id="head">
+							  <ul>
+ 								<li id="L1" onclick="Tab(1)">Description</li>
+ 								<li id="L2" onclick="Tab(2)">Detail</li>
+ 								<li id="L3" onclick="Tab(3)">Shipping</li>
+						      </ul>
+							</div>
+                            <div id="d1">
+                              <br>
+                              <br>
+							  <p>Two rich, chocolate cake layers are filled with luscious chocolate whipped cream mousse, then covered with milk chocolate frosting and a dark chocolate glaze. This best selling delight is then garnished with fudge rosettes and dark chocolate shaves. Includes a Chocolate Occasion Plaque, matching Greeting Card and is packaged in an elegant gift box!</p> 					
+							</div>
+                            <div id="d2">
+                              <br>
+                              <br>
+							  <ul>
+  								<li>Serves 6 to 8</li>
+ 							    <li>7 inches in diameter</li>
+  								<li>Ships Nationwide in Refrigerated Packaging</li>
+ 								<li>Certified Kof-K Kosher</li>
+							  </ul>
+                          
+                              <p>*ALLERGY INFORMATION: Unless otherwise noted, products contain milk, wheat, soy and egg, and were produced on equipment that processes peanuts, almonds, hazelnuts, pecans, walnuts. Our facility is not Gluten Free.</p>
+							</div>
+                            <div id="d3">
+                              <br>
+                              <br>
+							  <ul>
+  								<li>2-Day Express Shipping W-F: $14.99</li>
+ 							    <li>Overnight Shipping: $19.99</li>
+  								<li>Priority/Morning Delivery, before 12pm to most areas: $29.99</li>
+ 								<li>Saturday Delivery, available for most areas: $29.99</li>
+							  </ul>                          
+                              <p>Orders placed after 4:50PM ET Monday through Friday will be processed the following business day. Deliveries to Alaska & Hawaii are an additional $25.00; no international shipments. Our gifts are perishable and on-time delivery is of utmost importance! We cannot be held responsible for incorrect/incomplete addresses. Apartment numbers and suites for residential and business deliveries must be included. Please ensure you have the full address - delays due to missing or wrong information nullifies guaranteed delivery. We want your gift to arrive fresh and delicious!</p>
+							</div>
+       				     </div>                             
+                        </div>
+                      </div>
+                    </div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<h2>Stevens Cake Shop</h2>
+				<p>A marverlous cake shop that can make beautiful and customize cake</p>
+
+				<ul class="icons">
+					<li>
+						<a href="#" class="icon fa-twitter">
+							<span class="label">Twitter</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="icon fa-facebook">
+							<span class="label">Facebook</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="icon fa-instagram">
+							<span class="label">Instagram</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="icon fa-envelope">
+							<span class="label">Email</span>
+						</a>
+					</li>
+				</ul>
+				<p class="copyright">&copy; Stevens CS 545 Group
+					<a href="">Zidi Zhang, Jiayi Liu, Yuhao Li, Xuena Zhang</a>
+				</p>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.poptrox.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

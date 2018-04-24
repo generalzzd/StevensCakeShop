@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- -->
+    <title>Shopping Cart</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery.cookie.js"></script>
+
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+            var cake1 = $.cookie('cake1');
+            var cake2 = $.cookie('cake2');
+            var cake3 = $.cookie('cake3');
+            var cake4 = $.cookie('cake4');
+            var cake5 = $.cookie('cake5');
+            var cake6 = $.cookie('cake6');
+
+            if (typeof (cake1) == "undefined") {
+                $("#1").hide();
+                $("#l1").hide();
+            } else {
+                document.getElementById("item1vol").innerHTML = `Quantity: ${cake1}`;
+            }
+            if (typeof (cake2) == "undefined") {
+                $("#2").hide();
+                $("#l2").hide();
+            } else {
+                document.getElementById("item2vol").innerHTML = `Quantity: ${cake2}`;
+            }
+            if (typeof (cake3) == "undefined") {
+                $("#3").hide();
+                $("#l3").hide();
+            } else {
+                document.getElementById("item3vol").innerHTML = `Quantity: ${cake3}`;
+            }
+            if (typeof (cake4) == "undefined") {
+                $("#4").hide();
+                $("#l4").hide();
+            } else {
+                document.getElementById("item4vol").innerHTML = `Quantity: ${cake4}`;
+            }
+            if (typeof (cake5) == "undefined") {
+                $("#5").hide();
+                $("#l5").hide();
+            } else {
+                document.getElementById("item5vol").innerHTML = `Quantity: ${cake5}`;
+            }
+            if (typeof (cake6) == "undefined") {
+                $("#6").hide();
+                $("#l6").hide();
+            } else {
+                document.getElementById("item6vol").innerHTML = `Quantity: ${cake6}`;
+            }
+            if (typeof (cake1) == "undefined"
+                && typeof (cake2) == "undefined"
+                && typeof (cake3) == "undefined"
+                && typeof (cake4) == "undefined"
+                && typeof (cake5) == "undefined"
+                && typeof (cake6) == "undefined") {
+                $("#button").hide();
+            } else {
+                $("#7").hide();
+                $("#l7").hide();
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Footer -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="index.html" class="navbar-brand" href="#">Stevens Cake Shop</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="1.html" class="nav-link" href="#">Cakes</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="/WebGL/cakecustom.html" class="nav-link" href="#">Customize</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Display
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Grid</a>
+                            <a class="dropdown-item" href="#">Slide</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li> -->
+                </ul>
+                <a href="cart.html">
+                    <button class="btn btn-outline-success my-2 my-sm-0">Cart</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid h-100 w-75">
+        <hr>
+        <div class="row" id="1">
+            <div class="col-md-8">Strawberry Fool</div>
+            <div class="col-md-4" id="item1vol">.col-md-4</div>
+        </div>
+        <hr id="l1">
+        <div class="row" id="2">
+            <div class="col-md-8">Dark Forest</div>
+            <div class="col-md-4" id="item2vol">.col-md-4</div>
+        </div>
+        <hr id="l2">
+        <div class="row" id="3">
+            <div class="col-md-8">Mango Cream Cake</div>
+            <div class="col-md-4" id="item3vol">.col-md-4</div>
+        </div>
+        <hr id="l3">
+        <div class="row" id="4">
+            <div class="col-md-8">Bailey's Love Triangle</div>
+            <div class="col-md-4" id="item4vol">.col-md-4</div>
+        </div>
+        <hr id="l4">
+        <div class="row" id="5">
+            <div class="col-md-8">Black and White Chocolate Mousse</div>
+            <div class="col-md-4" id="item5vol">.col-md-4</div>
+        </div>
+        <hr id="l5">
+        <div class="row" id="6">
+            <div class="col-md-8">Blue Monday</div>
+            <div class="col-md-4" id="item6vol">.col-md-4</div>
+        </div>
+        <hr id="l6">
+        <div class="row" id="7">
+            <p>Your cart is empty</p>
+        </div>
+        <hr id="l7">
+        <a href="2.html" id="button">
+            <button class="btn btn-primary btn-lg btn-block mt-auto">Continue to checkout</button>
+        </a>
+    </div>
+
+    <footer id="footer">
+        <div class="inner">
+            <h2>Stevens Cake Shop</h2>
+            <p>A marverlous cake shop that can make beautiful and customize cake</p>
+
+            <ul class="icons">
+                <li>
+                    <a href="#" class="icon fa-twitter">
+                        <span class="label">Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon fa-facebook">
+                        <span class="label">Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon fa-instagram">
+                        <span class="label">Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon fa-envelope">
+                        <span class="label">Email</span>
+                    </a>
+                </li>
+            </ul>
+            <p class="copyright">&copy; Stevens CS 545 Group
+                <a href="">Zidi Zhang, Jiayi Liu, Yuhao Li, Xuena Zhang</a>
+            </p>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+</body>
+
+</html>

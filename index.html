@@ -1,190 +1,181 @@
-<!DOCTYPE HTML>
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>Stevens Cake Shop</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- -->
+    <title>Home page</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
-<body id="top">
-	<div class="container-full" style="margin-right: auto; margin-left: auto;">
-		<header>
-			<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-				<a class="navbar-brand" href="#">Our Cake</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-				 aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="#">Home
-								<span class="sr-only">(current)</span>
-							</a>
-						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="#">Menu</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-							 aria-expanded="false">
-								Display
-							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">Grid</a>
-								<a class="dropdown-item" href="#">Slide</a>
-							</div>
-						</li>
-						<!-- <li class="nav-item">
-							<a class="nav-link disabled" href="#">Disabled</a>
-						</li> -->
-					</ul>
-				</div>
-			</nav>
-		</header>
+<body>
+    <div class="container-full" style="margin-right: auto; margin-left: auto;">
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a href="index.html" class="navbar-brand" href="#">Stevens Cake Shop</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link" href="#">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="1.html" class="nav-link" href="#">Cakes</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="/WebGL/cakecustom.html" class="nav-link" href="#">Customize</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Display
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Grid</a>
+                                <a class="dropdown-item" href="#">Slide</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Disabled</a>
+                        </li> -->
+                    </ul>
+                    <a href="cart.html">
+                        <button class="btn btn-outline-success my-2 my-sm-0">Cart</button>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <main role="main">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="first-slide" src="Silder01.jpg" alt="First slide" style="width: 100%; height: 32rem">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="second-slide" src="Silder02.jpg" alt="Second slide" style="width: 100%; height: 32rem">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="third-slide" src="Silder03.jpg" alt="Third slide" style="width: 100%; height: 32rem">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="container">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Dark Forest
+                            <span class="text-muted">It'll blow your mind.</span>
+                        </h2>
+                        <p class="lead">Thick dark chocolate and rich fruity Kirsch (cherry spirit) are locked in a Pandora’s Box of
+                            plump cake layers and chocolate.
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="cake1.jpg" style="width: 500px; height: 300px;"
+                            data-holder-rendered="true">
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Blue Monday
+                            <span class="text-muted">See for yourself.</span>
+                        </h2>
+                        <p class="lead">Time for a Blue Monday. Premium fresh blueberry jam atop a joyous mountain of creamy cheesecake,
+                            topped off with a Joy Division of the freshest...
+                        </p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="cake2.jpg" data-holder-rendered="true"
+                            style="width: 500px; height: 300px;">
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+                <!-- <div class="row">
+                    <div class="col-lg-6">
+                        <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+                            <div class="my-3 py-3">
+                                <h2 class="display-5">Today's deal</h2>
+                                <p class="lead">And an even wittier subheading.</p>
+                            </div>
+                            <div class="bg-light box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h1>hello</h1>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="Recording.mp4" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <h2>Stevens Cake Shop</h2>
+                <p>A marverlous cake shop that can make beautiful and customize cake</p>
 
-		<section id="banner">
-			<div class="inner">
-				<header>
-					<h1>Stevens Cake Shop</h1>
-					<p>A marverlous cake shop that can make beautiful and customize cake</p>
-				</header>
-				<!--<a href="#main" class="more">Learn More</a>-->
-			</div>
-		</section>
+                <ul class="icons">
+                    <li>
+                        <a href="#" class="icon fa-twitter">
+                            <span class="label">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon fa-facebook">
+                            <span class="label">Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon fa-instagram">
+                            <span class="label">Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon fa-envelope">
+                            <span class="label">Email</span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright">&copy; Stevens CS 545 Group
+                    <a href="">Zidi Zhang, Jiayi Liu, Yuhao Li, Xuena Zhang</a>
+                </p>
+            </div>
+        </footer>
+    </div>
 
-		<!-- Main -->
-		<div id="main">
-			<div class="inner">
-
-				<!-- Boxes -->
-				<div class="thumbnails">
-
-					<div class="box">
-						<a href="" class="image fit">
-							<img src="pic/cake1.jpg" alt="" />
-						</a>
-						<div class="inner">
-							<h3>Strawberry Fool</h3>
-							<p>Now 21cake has encapsulated this gloriously English tradition in square cake form. At Wimbledon, protocol and propriety
-								rule.</p>
-							<a href="" class="button fit">Watch</a>
-						</div>
-					</div>
-
-					<div class="box">
-						<a href="" class="image fit">
-							<img src="pic/cake2.jpg" alt="" />
-						</a>
-						<div class="inner">
-							<h3>Dark Forest</h3>
-							<p>Thick dark chocolate and rich fruity Kirsch (cherry spirit) are locked in a Pandora’s Box of plump cake layers and
-								chocolate.</p>
-							<a href="" class="button style2 fit">Watch</a>
-						</div>
-					</div>
-
-					<div class="box">
-						<a href="https://youtu.be/s6zR2T9vn2c" class="image fit">
-							<img src="pic/cake3.jpg" alt="" />
-						</a>
-						<div class="inner">
-							<h3>Mango Cream Cake</h3>
-							<p>Easy food, price and results. Put mango and cream in your mouth.Delicate and soft touch, can not stop the sweet fun.</p>
-							<a href="" class="button style3 fit">Watch</a>
-						</div>
-					</div>
-
-					<div class="box">
-						<a href="" class="image fit">
-							<img src="pic/cake4.jpg" alt="" />
-						</a>
-						<div class="inner">
-							<h3>Bailey's Love Triangle</h3>
-							<p>Just Bailey's, light cream and you. The flavours may be velvetty subtle, but the chemistry is as electric as a first
-								kiss. </p>
-							<a href="" class="button style2 fit">Watch</a>
-						</div>
-					</div>
-
-					<div class="box">
-						<a href="" class="image fit">
-							<img src="pic/cake5.jpg" alt="" />
-						</a>
-						<div class="inner">
-							<h3>Black and White Chocolate Mousse</h3>
-							<p>Cool and delicate palate, sweet white chocolate, bitter dark chocolate sauce at the bottom, perfect for kids who like
-								sweetness</p>
-							<a href="" class="button style3 fit">Watch</a>
-						</div>
-					</div>
-
-					<div class="box">
-						<a href="" class="image fit">
-							<img src="pic/cake6.jpg" alt="" />
-						</a>
-						<div class="inner">
-							<h3>Blue Monday</h3>
-							<p>Time for a Blue Monday. Premium fresh blueberry jam atop a joyous mountain of creamy cheesecake, topped off with a
-								Joy Division of the freshest...</p>
-							<a href="" class="button fit">Watch</a>
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-		</div>
-
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="inner">
-				<h2>Stevens Cake Shop</h2>
-				<p>A marverlous cake shop that can make beautiful and customize cake</p>
-
-				<ul class="icons">
-					<li>
-						<a href="#" class="icon fa-twitter">
-							<span class="label">Twitter</span>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="icon fa-facebook">
-							<span class="label">Facebook</span>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="icon fa-instagram">
-							<span class="label">Instagram</span>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="icon fa-envelope">
-							<span class="label">Email</span>
-						</a>
-					</li>
-				</ul>
-				<p class="copyright">&copy; Stevens CS 545 Group
-					<a href="">Zidi Zhang, Jiayi Liu, Yuhao Li, Xuena Zhang</a>
-				</p>
-			</div>
-		</footer>
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.poptrox.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
